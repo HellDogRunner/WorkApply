@@ -58,7 +58,6 @@ public class Enemy : MonoBehaviour
             {
                 if (Time.time>=_nextAttackTime)
                 {
-                    Debug.Log("Attack");
                     col.GetComponent<Health>().Damage(_damage);
                     _nextAttackTime = Time.time + 1f / _attackRate;
                 }
